@@ -141,7 +141,7 @@ cc_perf_gl_timer(const cc_glglue * glue,
   GLubyte * framebuf = new GLubyte[size];
   glReadPixels(0, 0, viewport[2], viewport[3], GL_RGBA, GL_UNSIGNED_BYTE, framebuf);
 
-  glDepthMask(GL_FALSE); // Dont write to the depthbuffer. It wont be restored.
+  glDepthMask(GL_FALSE); // Dont write to the depth buffer. It won't be restored.
   glDisable(GL_DEPTH_TEST);
   glDisable(GL_LIGHTING);
   glDisable(GL_CULL_FACE);
@@ -215,7 +215,7 @@ cc_perf_gl_timer(const cc_glglue * glue,
       }
     }
 
-    // Don't run the test for more than the maximum alloted.
+    // Don't run the test for more than the maximum allotted.
     const SbTime t = SbTime::getTimeOfDay() - starttime;
     if (t > maxtime) { break; }
   }

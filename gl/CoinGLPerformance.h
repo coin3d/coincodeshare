@@ -105,7 +105,7 @@ typedef void CC_PERF_POST_CB(const cc_glglue * g, void * userdata);
 
   An important note about the usage: be aware that this is not meant
   to be used for measuring cases where there are small differences in
-  performance between competing techiques due to e.g. better pipeline
+  performance between competing techniques due to e.g. better pipeline
   parallelization or other such, rather marginal, effects.
 
   This is supposed to be used to smoke out systems/drivers where there
